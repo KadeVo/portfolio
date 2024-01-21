@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="mx-auto p-20 flex items-center">
       <div className="flex-shrink-0 mr-8">
-        <div className="h-40 w-40 overflow-hidden rounded-full">
+        <div className="h-40 w-50 overflow-hidden rounded-full">
           <img
             src={kadinImage}
             alt="kadin vo"
