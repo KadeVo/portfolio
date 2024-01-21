@@ -32,10 +32,14 @@ const Skills = () => {
 
   return (
     <div>
-      <h2>Technical Skills</h2>
-      <div className="grid grid-cols-3 gap-4">
+      <h2 className="text-2xl p-5">Technical Skills</h2>
+
+      <div className="grid grid-cols-5 gap-2 items-center">
         {skillsList.map((skill, index) => (
-          <div key={index} className="flex items-center">
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center"
+          >
             <span className="text-2xl mr-2" style={{ color: skill.color }}>
               {skill.icon}
             </span>
