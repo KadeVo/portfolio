@@ -1,4 +1,5 @@
 import About from '../components/About'
+import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <About />
 
         <Skills />
+        <Projects />
       </div>
     </div>
   )
