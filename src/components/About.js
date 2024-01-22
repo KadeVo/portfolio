@@ -1,4 +1,5 @@
 import kadinImage from '../assets/images/kadin.jpg'
+import microsoftCert from '../assets/images/AZ-900.pdf'
 
 const About = () => {
   return (
@@ -31,11 +32,16 @@ const About = () => {
             href="https://tailoredtails.onrender.com/"
             target="_blank"
             rel="noreferrer"
+            className="underline text-blue-500"
           >
             Tailored Tails
           </a>{' '}
-          and completed the AZ-900 Microsoft Exam. Currently learning Python and
-          diving more into React Native.{' '}
+          and completed the
+          <a href={microsoftCert} className="underline text-blue-500">
+            {' '}
+            AZ-900 Microsoft Exam.
+          </a>
+          Currently learning Python and diving more into React Native.{' '}
         </p>
       </div>
     </div>
