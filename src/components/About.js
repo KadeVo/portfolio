@@ -1,12 +1,15 @@
 import kadinImage from '../assets/images/kadin.jpg'
 import microsoftCert from '../assets/images/AZ-900.pdf'
 import bachelorCert from '../assets/images/bachelor.pdf'
+import CV from '../assets/images/finalCV.pdf'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
   return (
     <div className="mx-auto p-20 flex items-center">
       <div className="flex-shrink-0 mr-8">
-        <div className="h-40 w-50 overflow-hidden rounded-full">
+        <div className="h-40 w-40 md:h-50 md:w-50 lg:h-60 lg:w-60 overflow-hidden rounded-full">
           <img
             src={kadinImage}
             alt="kadin vo"
@@ -14,7 +17,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div>
+      <div className="flex flex-col items-center">
         <p className="text-base">
           I graduated with a{' '}
           <a href={bachelorCert} className="underline text-blue-500">
@@ -48,6 +51,29 @@ const About = () => {
           </a>{' '}
           Currently learning Python and diving more into React Native.{' '}
         </p>
+        <div className="flex space-x-4 mt-4">
+          <a
+            href="https://www.linkedin.com/in/kadin-vo/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-500 flex items-center"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+
+          <a
+            href="https://github.com/KadeVo"
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-800 flex items-center"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+
+          <a href={CV} className="underline text-blue-500 flex items-center">
+            <FontAwesomeIcon size="2x" /> Resume
+          </a>
+        </div>
       </div>
     </div>
   )
