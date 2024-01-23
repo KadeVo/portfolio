@@ -11,7 +11,7 @@ const ProjectCard = ({ title, description, image, url, githubUrl, tech }) => (
       />
     </div>
     <p className="text-base mb-2">{description}</p>
-    <div className="mb-4">
+    <div className="mt-4">
       <strong>Technologies:</strong>
       <div className="flex flex-wrap gap-2">
         {tech.map((techItem, index) => (
