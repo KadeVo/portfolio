@@ -47,11 +47,15 @@ const About = () => {
         <Socials />
       </div>
 
-      <div className="w-50 h-60 shadow-md">
+      <div className="w-50 h-60 shadow-md overflow-hidden">
         <img
           src={kadinImage}
           alt="Kadin, Full Stack Software Developer"
-          className="w-full h-full object-cover rounded-lg shadow-lg "
+          className="w-full h-full object-cover rounded-lg shadow-lg"
+          style={{
+            WebkitObjectFit: 'cover',
+            objectFit: 'cover',
+          }}
         />
       </div>
     </div>
