@@ -1,8 +1,8 @@
 import { FaGithub } from 'react-icons/fa'
 
-const ProjectCard = ({ title, description, image, url, githubUrl }) => (
-  <div className="flex flex-col rounded-lg shadow-md p-4 h-[400px] w-[300px] ">
-    <div className="mb-4 overflow-hidden items-center">
+const ProjectCard = ({ title, description, image, url, githubUrl, tech }) => (
+  <div className="flex flex-col rounded-lg shadow-md p-4 h-[500px] w-[300px] ">
+    <div className="mb-4 overflow-hidden items-center h-[500px]">
       <h3 className="font-bold text-lg mb-2">{title}</h3>
       <img
         src={image}
@@ -10,7 +10,20 @@ const ProjectCard = ({ title, description, image, url, githubUrl }) => (
         className="rounded-lg mb-4 w-full h-full object-cover"
       />
     </div>
-    <p className="text-base">{description}</p>
+    <p className="text-base mb-2">{description}</p>
+    <div className="mb-4">
+      <strong>Technologies:</strong>
+      <div className="flex flex-wrap gap-2">
+        {tech.map((techItem, index) => (
+          <div
+            key={index}
+            className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-600"
+          >
+            {techItem}
+          </div>
+        ))}
+      </div>
+    </div>
     <div className="flex items-center mt-4">
       <a href={githubUrl} className="inline-flex items-center mt-4 text-sm">
         <FaGithub size="2em" className="text-gray-500 hover:text-black" />
@@ -37,7 +50,6 @@ const ProjectCard = ({ title, description, image, url, githubUrl }) => (
     </div>
   </div>
 )
-
 const Projects = () => (
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
     <h2 className="text-center text-3xl font-bold mb-8">Projects</h2>
@@ -60,6 +72,7 @@ const projects = [
     image: require('../assets/images/tailoredtails.PNG'),
     url: '/tailoredtails',
     githubUrl: 'https://github.com/KadeVo/tailored-tails-fullstack',
+    tech: ['React', 'React Native', 'TailwindSS'],
   },
   {
     id: 2,
@@ -69,6 +82,7 @@ const projects = [
     image: require('../assets/images/newsight.gif'),
     url: '/newsight',
     githubUrl: 'https://github.com/KadeVo/newsight',
+    tech: ['React', 'React Native', 'TailwindSS'],
   },
   {
     id: 3,
@@ -78,6 +92,7 @@ const projects = [
     image: require('../assets/images/organisers.png'),
     url: '/organisers',
     githubUrl: 'https://github.com/KadeVo/capstoneproject',
+    tech: ['React', 'React Native', 'TailwindSS'],
   },
   {
     id: 4,
@@ -87,5 +102,6 @@ const projects = [
     image: require('../assets/images/pomodoro.jpg'),
     url: '/organisers',
     githubUrl: 'https://github.com/KadeVo/pomodoro-app',
+    tech: ['React', 'React Native', 'TailwindSS'],
   },
 ]
