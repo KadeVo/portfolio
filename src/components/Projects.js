@@ -2,16 +2,14 @@ import { FaGithub } from 'react-icons/fa'
 
 const ProjectCard = ({ title, description, image, url, githubUrl }) => (
   <div className="flex flex-col rounded-lg shadow-md p-4 h-max w-[300px]">
-    <img src={image} alt={title} className="rounded-lg mb-4 h-48" />
-    <h3 className="font-bold text-lg mb-2">{title}</h3>
-
+    <div className="mb-4 h-48 overflow-hidden items-center">
+      <img src={image} alt={title} className="rounded-lg mb-4 h-full w-full" />
+      <h3 className="font-bold text-lg mb-2">{title}</h3>
+    </div>
     <p className="text-base">{description}</p>
     <div className="flex items-center mt-4">
-      <a
-        href={githubUrl}
-        className="inline-flex items-center mt-4 text-sm  text-indigo-600 hover:underline"
-      >
-        <FaGithub size="2em" className="text-black" />
+      <a href={githubUrl} className="inline-flex items-center mt-4 text-sm">
+        <FaGithub size="2em" className="text-gray-500 hover:text-black" />
       </a>
       <a
         href={url}
@@ -67,5 +65,23 @@ const projects = [
     image: require('../assets/images/newsight.gif'),
     url: '/newsight',
     githubUrl: 'https://github.com/KadeVo/newsight',
+  },
+  {
+    id: 3,
+    title: 'The Organisers',
+    description:
+      'My capstone project at Dev Academy. Working with a group of 5 to provide everyday utilities to make life easier.',
+    image: require('../assets/images/organisers.png'),
+    url: '/organisers',
+    githubUrl: 'https://github.com/KadeVo/capstoneproject',
+  },
+  {
+    id: 4,
+    title: 'Pomodoro',
+    description:
+      'A Pomodoro timer that I created in React Native to help me study for the AZ-900 exam.',
+    image: require('../assets/images/pomodoro.jpg'),
+    url: '/organisers',
+    githubUrl: 'https://github.com/KadeVo/pomodoro-app',
   },
 ]
