@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const Newsight = () => {
   const skillsAndFrameworks = ['React.js', 'Tailwind CSS', 'Next,js', 'NewsAPI']
 
@@ -32,6 +33,11 @@ const Newsight = () => {
             me a bunch of valuable lessons as I became a lot more familiar with
             TailwindCSS, Next.js and external APIS.{' '}
           </p>
+          <Link to="/">
+            <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
+              Go Back to Main Page
+            </button>
+          </Link>
         </div>
       </div>
     </div>

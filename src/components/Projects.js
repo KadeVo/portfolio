@@ -72,7 +72,14 @@ const projects = [
     image: require('../assets/images/tailoredtails.PNG'),
     url: '/tailoredtails',
     githubUrl: 'https://github.com/KadeVo/tailored-tails-fullstack',
-    tech: ['React', 'React Native', 'TailwindSS'],
+    tech: [
+      'React.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Redux',
+      'MongoDB',
+      'Stripe',
+    ],
   },
   {
     id: 2,
@@ -82,7 +89,7 @@ const projects = [
     image: require('../assets/images/newsight.gif'),
     url: '/newsight',
     githubUrl: 'https://github.com/KadeVo/newsight',
-    tech: ['React', 'React Native', 'TailwindSS'],
+    tech: ['React.js', 'Tailwind CSS', 'Next.js', 'NewsAPI', 'TypeScript'],
   },
   {
     id: 3,
@@ -92,7 +99,7 @@ const projects = [
     image: require('../assets/images/organisers.png'),
     url: '/organisers',
     githubUrl: 'https://github.com/KadeVo/capstoneproject',
-    tech: ['React', 'React Native', 'TailwindSS'],
+    tech: ['React.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
     id: 4,
@@ -100,8 +107,8 @@ const projects = [
     description:
       'A Pomodoro timer that I created in React Native to help me study for the AZ-900 exam.',
     image: require('../assets/images/pomodoro.jpg'),
-    url: '/organisers',
+    url: '/pomodoro',
     githubUrl: 'https://github.com/KadeVo/pomodoro-app',
-    tech: ['React', 'React Native', 'TailwindSS'],
+    tech: ['React.js', 'React Native', 'Tailwind CSS', 'Expo'],
   },
 ]

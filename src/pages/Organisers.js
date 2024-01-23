@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom'
+
 const Organisers = () => {
   const skillsAndFrameworks = [
     'React.js',
     'Tailwind CSS',
     'Agile Methodologies',
+    'TypeScript',
   ]
 
   return (
@@ -41,6 +44,11 @@ const Organisers = () => {
             issues as a team because everyone is learning from this project & we
             could have combined our learning.{' '}
           </p>
+          <Link to="/">
+            <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
+              Go Back to Main Page
+            </button>
+          </Link>
         </div>
       </div>
     </div>

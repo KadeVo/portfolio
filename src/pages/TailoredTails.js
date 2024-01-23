@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const TailoredTails = () => {
   const skillsAndFrameworks = [
     'React.js',
@@ -50,6 +51,11 @@ const TailoredTails = () => {
             a while, overcoming multiple hurdles and giving us more experience
             in having to tackle problems at a different angle.
           </p>
+          <Link to="/">
+            <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
+              Go Back to Main Page
+            </button>
+          </Link>
         </div>
       </div>
     </div>

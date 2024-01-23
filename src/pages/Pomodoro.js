@@ -1,16 +1,18 @@
+import { Link } from 'react-router-dom'
+
 const Pomodoro = () => {
   const skillsAndFrameworks = [
     'React.js',
+    'React Native',
+    'TypeScript',
+    'Expo',
     'Tailwind CSS',
-    'JavaScript',
-    'Redux',
-    'MongoDB',
   ]
 
   return (
     <div className="text-center max-w-2xl mx-auto">
       <div>
-        <h1 className="text-4xl font-bold mt-10">Tailored Tails</h1>
+        <h1 className="text-4xl font-bold mt-10">Pomodoro</h1>
 
         <div className="flex flex-wrap justify-center mt-4">
           {skillsAndFrameworks.map((skill, index) => (
@@ -34,6 +36,11 @@ const Pomodoro = () => {
             myself and get more familiar with React Native & Mobile Application
             development.{' '}
           </p>
+          <Link to="/">
+            <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
+              Go Back to Main Page
+            </button>
+          </Link>
         </div>
       </div>
     </div>
