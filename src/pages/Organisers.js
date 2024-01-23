@@ -44,6 +44,21 @@ const Organisers = () => {
             issues as a team because everyone is learning from this project & we
             could have combined our learning.{' '}
           </p>
+          <br></br>
+          <h2 className="text-lg font-bold">Capstone Presenetation</h2>
+          <br></br>
+          <div
+            className="relative"
+            style={{ paddingBottom: '56.25%', height: 0 }}
+          >
+            <iframe
+              title="YouTube Video"
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/QE5OJYASifY"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <Link to="/">
             <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
               Go Back to Main Page
