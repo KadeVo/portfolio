@@ -36,6 +36,22 @@ const Pomodoro = () => {
             myself and get more familiar with React Native & Mobile Application
             development.{' '}
           </p>
+          <br></br>
+          <h2 className="text-lg font-bold">Disucssing the project</h2>
+          <br></br>
+          <div
+            className="relative"
+            style={{ paddingBottom: '56.25%', height: 0 }}
+          >
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/kcDzW3ppsqk"
+              title="Kadin speaking about his project"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
           <Link to="/">
             <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
               Go Back to Main Page
