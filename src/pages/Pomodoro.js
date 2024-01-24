@@ -37,7 +37,7 @@ const Pomodoro = () => {
             development.{' '}
           </p>
           <br></br>
-          <h2 className="text-lg font-bold">Disucssing the project</h2>
+          <h2 className="text-lg font-bold">Discussing the project</h2>
           <br></br>
           <div
             className="relative"

@@ -45,7 +45,7 @@ const Organisers = () => {
             could have combined our learning.{' '}
           </p>
           <br></br>
-          <h2 className="text-lg font-bold">Capstone Presenetation</h2>
+          <h2 className="text-lg font-bold">Discussing the project</h2>
           <br></br>
           <div
             className="relative"
