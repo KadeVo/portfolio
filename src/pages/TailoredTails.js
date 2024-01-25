@@ -54,7 +54,7 @@ const TailoredTails = () => {
           </p>
           <br></br>
           <h2 className="text-lg font-bold">Discussing the project</h2>
-          <br></br>
+
           <div
             className="relative"
             style={{ paddingBottom: '56.25%', height: 0 }}
@@ -73,6 +73,75 @@ const TailoredTails = () => {
               Go Back to Main Page
             </button>
           </Link>
+          <div className="mt-4">
+            <h3 className="font-bold">Item Slice</h3>
+            <p className="mb-4">
+              This code essentially handles the asynchronous fetch operation for
+              product items and manages the corresponding state in the Redux
+              store. The axios library is used to make the HTTP request, and the
+              state is updated based on the different stages of the asynchronous
+              operation (pending, fulfilled, rejected). The fetched product
+              items are stored in the Redux state.
+              <br></br>
+              <br></br>I had no knowledge with Redux, Axios for handling HTTP
+              requests, and the intricacies of setting initial states. Through
+              this project, I gained a lot of useful information and now able to
+              understand Redux's role in state management, especially in
+              asynchronous operations using Thunks. The integration of Axios
+              facilitated the incorporation of external APIs, improving my skill
+              set in dealing with real-world data fetching and error handling
+              scenarios.
+            </p>
+
+            <pre
+              className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto mb-4"
+              style={{ textAlign: 'left' }}
+            >
+              {`
+              const initialState: ProductsState = {
+                items: [],
+                status: 'idle',
+              }
+              
+              export const productsFetch = createAsyncThunk<Item[], void>(
+                'products/productsFetch',
+                async () => {
+                  try {
+                    const response = await axios.get<Item[]>(
+                      'https://tailored-tails-api-05jq.onrender.com/items'
+                    )
+                    return response?.data
+                  } catch (error) {
+                    console.log(error)
+                    throw error
+                  }
+                }
+              )
+              
+              const productsSlice = createSlice({
+                name: 'items',
+                initialState,
+                reducers: {},
+                extraReducers: (builder) => {
+                  builder
+                    .addCase(productsFetch.pending, (state) => {
+                      state.status = 'pending'
+                    })
+                    .addCase(
+                      productsFetch.fulfilled,
+                      (state, action: PayloadAction<Item[]>) => {
+                        state.status = 'success'
+                        state.items = action.payload
+                      }
+                    )
+                    .addCase(productsFetch.rejected, (state) => {
+                      state.status = 'rejected'
+                    })
+                },
+              })
+                `}
+            </pre>
+          </div>
         </div>
       </div>
     </div>
