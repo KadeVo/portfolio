@@ -42,7 +42,7 @@ const About = () => {
             {' '}
             AZ-900 Microsoft Exam.
           </a>{' '}
-          Currently I am learning Python and diving more into React Native.{' '}
+          Currently I am learning Python, C# and diving more into React Native.{' '}
         </p>
         <Socials />
       </div>

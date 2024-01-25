@@ -30,8 +30,9 @@ const Newsight = () => {
             hook as I had to teach myself using Next.js useSearchParams,
             altering the api response and the general way Next.js functions.
             Overall, I am happy with how it has developed over time as it taught
-            me a bunch of valuable lessons as I became a lot more familiar with
-            TailwindCSS, Next.js and external APIS.{' '}
+            me a bunch of valuable lessons regarding search parmas and external
+            api which was the primary goal. Additionanllu, I became a lot more
+            familiar with TailwindCSS and Next.js.{' '}
           </p>
           <br></br>
           <h2 className="text-lg font-bold">Discussing the project</h2>
@@ -48,6 +49,42 @@ const Newsight = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          </div>
+          <br></br>
+          <h2 className="text-lg font-bold">Code In-depth explaination</h2>
+          <br></br>
+          <div className="mt-4">
+            <p className="text-gray-600 mb-4">
+              My web application utilises Next.js my custom hook
+              'useSearchParam' to manage and interact with search parameters in
+              my project. Within the custom hook, the code initializes
+              parameters such as the News API key, default news category
+              ('general'), and default country ('us'). The hook also manages the
+              selected country, page, and category using the useState hook. The
+              available news categories are predefined, including options like
+              'Business,' 'Entertainment,' 'Health,' 'Science,' 'Sports,' and
+              'Technology.' The hook dynamically constructs the API URL based on
+              these parameters, enabling dynamic fetching of top headlines.
+              Below is the relevant code I am referring to. <br></br>{' '}
+            </p>
+            <pre className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto">
+              {`export const useSearchParam = () => {
+  const searchParams = useSearchParams()
+  const defaultCategory = 'general'
+  const defaultCountry = 'us'
+  const [country, setCountry] = useState(
+    searchParams.get('country') || defaultCountry)
+  const [page, setPage] = useState(1)
+  const [category, setCategory] = useState(
+    searchParams.get('category') || defaultCategory)
+    useEffect(() => {
+      setCountry(searchParams.get('country') || '')
+      const pageParam = parseInt(searchParams.get('page') || '1', 10)
+      setPage(pageParam)
+    }, [searchParams])
+  
+    const apiUrl = \`https://newsapi.org/v2/top-headlines?country=\${country}&category=\${category}&page=\${page}&apiKey=\${apiKey}\``}
+            </pre>
           </div>
           <Link to="/">
             <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
