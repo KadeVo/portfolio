@@ -9,7 +9,7 @@ const Socials = () => {
         href="https://www.linkedin.com/in/kadin-vo/"
         target="_blank"
         rel="noreferrer"
-        className="text-blue-500 flex items-center"
+        className="text-gray-500 flex items-center hover:text-blue-500"
       >
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
@@ -18,7 +18,7 @@ const Socials = () => {
         href="https://github.com/KadeVo"
         target="_blank"
         rel="noreferrer"
-        className="text-gray-800 flex items-center"
+        className="text-gray-500 flex items-center hover:text-gray-800"
       >
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
