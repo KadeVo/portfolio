@@ -6,6 +6,9 @@ const Organisers = () => {
     'Tailwind CSS',
     'Agile Methodologies',
     'TypeScript',
+    'Express',
+    'Knex',
+    'SQLite',
   ]
 
   return (

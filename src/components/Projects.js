@@ -79,6 +79,7 @@ const projects = [
       'Redux',
       'MongoDB',
       'Stripe',
+      'Node.js',
     ],
   },
   {
@@ -95,11 +96,18 @@ const projects = [
     id: 3,
     title: 'The Organisers',
     description:
-      'My capstone project at Dev Academy. Working with a group of 5 to provide everyday utilities to make life easier.',
+      'A full stack web application for capstone project at Dev Academy. Working with a group of 5 to provide everyday utilities to make life easier.',
     image: require('../assets/images/organisers.png'),
     url: '/organisers',
     githubUrl: 'https://github.com/KadeVo/capstoneproject',
-    tech: ['React.js', 'TypeScript', 'Tailwind CSS'],
+    tech: [
+      'React.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Express',
+      'Knex',
+      'SQLite',
+    ],
   },
   {
     id: 4,
