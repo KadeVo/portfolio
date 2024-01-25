@@ -142,6 +142,64 @@ const TailoredTails = () => {
                 `}
             </pre>
           </div>
+          <h3 className="font-bold">Authentication</h3>
+          <p>
+            Through creating this authentication slice, I've been able to
+            understand the key concepts in Redux and user authentication .
+            Implementing the loadUser action has deepened my comprehension of
+            state initialization, utilizing JSON Web Tokens (JWTs) to persist
+            user data, and decoding these tokens for user authentication. The
+            logoutUser action has taught me state management for user logout
+            scenarios, involving the removal of sensitive information and token
+            clearing from local storage. I've gained insights into handling
+            various states such as pending, fulfilled, and rejected, reinforcing
+            the importance of error handling and conveying meaningful feedback
+            to users.
+          </p>
+          <pre
+            className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto mb-4"
+            style={{ textAlign: 'left' }}
+          >
+            {`
+              const authSlice = createSlice({
+                name: 'auth',
+                initialState,
+                reducers: {
+                  loadUser(state): initialStateModel {
+      
+                  },
+                  logoutUser(state): initialStateModel {
+                    localStorage.removeItem('token');
+                    return {
+                      ...state,
+                      token: '',
+                      name: '',
+                      email: '',
+                      _id: '',
+                      registerStatus: '',
+                      registerError: '',
+                      loginStatus: '',
+                      loginError: '',
+                      userLoaded: false,
+                    };
+                  },
+                },
+                extraReducers: (builder) => {
+                  builder.addCase(registerUser.pending, (state) => {
+                    return { ...state, registerStatus: 'pending' };
+                  });
+               
+                  builder.addCase(loginUser.rejected, (state, action) => {
+                    return {
+                      ...state,
+                      loginStatus: 'rejected',
+                      loginError: action.payload instanceof Error ? action.payload.message : 'An error occurred',
+                    };
+                  });
+                },
+              });
+                `}
+          </pre>
         </div>
       </div>
     </div>
