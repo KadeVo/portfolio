@@ -67,7 +67,10 @@ const Newsight = () => {
               these parameters, enabling dynamic fetching of top headlines.
               Below is the relevant code I am referring to. <br></br>{' '}
             </p>
-            <pre className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto">
+            <pre
+              className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto"
+              style={{ textAlign: 'left' }}
+            >
               {`export const useSearchParam = () => {
   const searchParams = useSearchParams()
   const defaultCategory = 'general'
@@ -80,8 +83,7 @@ const Newsight = () => {
     useEffect(() => {
       setCountry(searchParams.get('country') || '')
       const pageParam = parseInt(searchParams.get('page') || '1', 10)
-      setPage(pageParam)
-    }, [searchParams])
+      setPage(pageParam)}, [searchParams])
   
     const apiUrl = \`https://newsapi.org/v2/top-headlines?country=\${country}&category=\${category}&page=\${page}&apiKey=\${apiKey}\``}
             </pre>

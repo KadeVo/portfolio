@@ -52,6 +52,87 @@ const Pomodoro = () => {
               allowfullscreen
             ></iframe>
           </div>
+          <br></br>
+          <h2 className="text-lg font-bold">Code In-depth explaination</h2>
+
+          <div className="mt-4">
+            <h3 className="font-bold">Audio Handling</h3>
+            <p className="mb-4">
+              The audio has asynchronous functions ensures smooth and
+              interruption-free audio playback. It integrates Expo's Audio
+              module allows the ability to load and unload the audio to be
+              played at the correct timing and turn off when necessary.
+            </p>
+
+            <pre
+              className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto mb-4"
+              style={{ textAlign: 'left' }}
+            >
+              {`const stopSound = async () => {
+                  try {
+                    if (sound) {
+                      await sound.stopAsync()
+                      await sound.unloadAsync()
+                    }
+                  } catch (error) {
+                    console.error('Error stopping sound: ', error)
+                  }
+                }
+              
+                const playSound = async () => {
+                  try {
+                    const { sound } = await Audio.Sound.createAsync(
+                      require('../assets/audio/mixkit-classic-winner-alarm-1997.wav')
+                    )
+                    setSound(sound)
+                    await sound.playAsync()
+                  } catch (error) {
+                    console.error('Error playing sound: ', error)
+                  }
+                }
+                `}
+            </pre>
+            <h3 className="font-bold">Timer Logic</h3>
+            <p className="mb-4">
+              Utilises the useEffect hook to manages intervals for updating
+              study time and paused time. It also works with the Audio that
+              allows the music to be played when at th end of a study session.
+            </p>
+            <pre
+              className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto"
+              style={{ textAlign: 'left' }}
+            >
+              {` useEffect(() => {
+    let studyInterval: NodeJS.Timeout
+    let pauseInterval: NodeJS.Timeout
+
+    if (isActive && studyTime > 0) {
+      studyInterval = setInterval(() => {
+        setStudyTime((prevStudyTime) => prevStudyTime - 1)
+      }, 1000)
+    } else if (studyTime === 0) {
+      setIsActive(false)
+    }
+
+    if (isPaused) {
+      pauseInterval = setInterval(() => {
+        setPausedTime((prevPausedTime) => prevPausedTime + 1)
+        stopSound()
+      }, 1000)
+    }
+    if (studyTime <= 0 && isActive) {
+      setIsActive(false)
+      playSound()
+    }
+
+    return () => {
+      clearInterval(studyInterval)
+      clearInterval(pauseInterval)
+    }
+  }, [isActive, isPaused, studyTime])
+                `}
+            </pre>
+          </div>
           <Link to="/">
             <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
               Go Back to Main Page

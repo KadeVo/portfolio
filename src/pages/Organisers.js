@@ -48,8 +48,8 @@ const Organisers = () => {
             could have combined our learning.{' '}
           </p>
           <br></br>
-          <h2 className="text-lg font-bold">Discussing the project</h2>
-          <br></br>
+          <h2 className="text-lg font-bold">Group Presentation</h2>
+
           <div
             className="relative"
             style={{ paddingBottom: '56.25%', height: 0 }}
@@ -62,6 +62,7 @@ const Organisers = () => {
               allowFullScreen
             ></iframe>
           </div>
+
           <Link to="/">
             <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
               Go Back to Main Page
