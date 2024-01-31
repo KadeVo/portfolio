@@ -31,21 +31,22 @@ const Organisers = () => {
         <h2 className="text-2xl font-bold">About the Project</h2>
         <div className="mt-4">
           <p className="text-gray-600">
-            This is my capstone project at Dev Academ Aotearoa. We spent 5 days
-            working on it in a modern software development team environment
-            under agile methodologies. I acted as the Scrum Facilitator and
-            worked on the front-end styling of the initial dashboard, each
-            widget styling, and worked on backend to frontend on the todo, gift
-            ideas & budget calculator widgets. I got to work with multiple
-            people in an intense developing situation due to the time
-            constraint. I learnt how to function better as a team, reinforced
-            backend knowledge, how to problem-solve with others, and improved my
-            ability of being a Scrum Facilitator. One thing I think I could have
-            improved on is hosting more meetings for the team. I think although
-            my group met up a couple times a day, I personally felt it would
-            have been nice to have everyone checked up on more and discuss
-            issues as a team because everyone is learning from this project & we
-            could have combined our learning.{' '}
+            This is my capstone project to graduate from Dev Academy Aotearoa.
+            We spent 5 days working on it in a modern software development team
+            environment under agile methodologies. I acted as the Scrum
+            Facilitator and worked on the front-end styling of the initial
+            dashboard, each widget styling, and worked on the backend to
+            frontend on the todo, gift ideas & budget calculator widgets. I
+            experienced working with multiple people in an intense developing
+            situation due to the time constraint. As a scrum facilitator, I
+            reinforced backend knowledge, problem-solved with others, and in
+            turn, acquired insights into optimising teamwork dynamics. One thing
+            I could have improved on was hosting more meetings for the team.
+            Although my group met up a couple of times each day, I personally
+            felt it would have been nice to have everyone checked up on more and
+            had opportunities to discuss more issues as a team. Combining every
+            member's strengths would have benefited the team dynamic so that
+            everyone equally gained new insights from the project.{' '}
           </p>
           <br></br>
           <h2 className="text-lg font-bold">Group Presentation</h2>
