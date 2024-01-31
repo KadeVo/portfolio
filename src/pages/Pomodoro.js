@@ -29,12 +29,12 @@ const Pomodoro = () => {
         <h2 className="text-2xl font-bold">About the Project</h2>
         <div className="mt-4">
           <p className="text-gray-600">
-            This is one of my newest projects, my own pomodoro study application
-            using React Native. I created it for when I was studying for the
+            Pomodoro is the latest personal application I've been working on
+            that uses React Native. I created it when I was studying for the
             AZ-900 exam and it allowed me to stay focused and have a productive
-            study session. It is currently a WIP and a testing ground to teach
-            myself and get more familiar with React Native & Mobile Application
-            development.{' '}
+            study session. It is currently a work in progress and a testing
+            ground to teach myself to get more familiar with React Native &
+            Mobile Application development.{' '}
           </p>
           <br></br>
           <h2 className="text-lg font-bold">Discussing the project</h2>
@@ -53,15 +53,15 @@ const Pomodoro = () => {
             ></iframe>
           </div>
           <br></br>
-          <h2 className="text-lg font-bold">Code In-depth explaination</h2>
+          <h2 className="text-lg font-bold">Code In-depth Explanation</h2>
 
           <div className="mt-4">
             <h3 className="font-bold">Audio Handling</h3>
             <p className="mb-4">
-              The audio has asynchronous functions ensures smooth and
-              interruption-free audio playback. It integrates Expo's Audio
-              module allows the ability to load and unload the audio to be
-              played at the correct timing and turn off when necessary.
+              The audio asynchronous function ensures smooth and
+              interruption-free audio playback. It integrates the Expo's Audio
+              module which allows the ability to load and unload the audio, be
+              played at the correct timing, and be turned off when necessary.
             </p>
 
             <pre
@@ -94,9 +94,9 @@ const Pomodoro = () => {
             </pre>
             <h3 className="font-bold">Timer Logic</h3>
             <p className="mb-4">
-              Utilises the useEffect hook to manages intervals for updating
-              study time and paused time. It also works with the Audio that
-              allows the music to be played when at th end of a study session.
+              Utilises the useEffect hook to manage intervals for updating study
+              time and paused time. It also works with the audio that allows the
+              music to be played when at the end of a study session.
             </p>
             <pre
               className="bg-gray-900 text-white p-4 rounded-md overflow-x-auto"
