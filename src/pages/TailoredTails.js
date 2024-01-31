@@ -30,27 +30,28 @@ const TailoredTails = () => {
         <h2 className="text-2xl font-bold">About the Project</h2>
         <div className="mt-4">
           <p className="text-gray-600">
-            Tailored Tails was created with the goal of developing our own
-            Authorization System and Cart. Collaborating with a friend, we faced
-            numerous challenges throughout the process, with the most
-            significant hurdle being the implementation of a robust
-            Authorization system and Cart functionality. Our tech stack included
-            React, TailwindCSS, TypeScript, NodeJS, Redux, Stripe, and MongoDB.
-            One of the major challenges was determining the optimal approach for
-            managing user items in the Cart. Initially considering a
-            database-centric solution, we eventually discovered the simplicity
-            and efficiency of using local storage. This adjustment significantly
-            improved manageability. Throughout the project, we engaged in
-            extensive research, experimenting with various approaches, and
-            adapting based on trial and error. The learning curve was steep as
-            we delved into Redux, MongoDB, Stripe integration, and the creation
-            of a custom Login/Registration system. Despite the hurdles, the
-            project provided invaluable insights into the complexities of
-            everyday systems. Looking back, the experience not only enhanced our
+            Tailored Tails was created to develop our own Authorisation System
+            and Cart. Collaborating with a friend, we faced numerous challenges
+            throughout the process, with the most significant hurdle being the
+            implementation of a robust Authorisation system and Cart
+            functionality. Our tech stack included React, TailwindCSS,
+            TypeScript, NodeJS, Redux, Stripe, and MongoDB. Another major
+            challenge we faced was determining the optimal approach for managing
+            user items in the Cart. Initially considering a database-centric
+            solution, we eventually discovered the simplicity and efficiency of
+            using local storage. This adjustment significantly improved
+            manageability. Throughout this project, we engaged in extensive
+            research, experimenting with various approaches, and adapting based
+            on trial and error. The learning curve was steep as we delved into
+            Redux, MongoDB, Stripe integration, and the creation of a custom
+            Login/Registration system. Despite the hurdles, this project
+            provided invaluable insights into the complexities of everyday
+            systems. Looking back, the experience not only enhanced our
             technical skills but also expanded our problem-solving mindset. This
-            project means a lot to me as my friend and I struggled every day for
-            a while, overcoming multiple hurdles and giving us more experience
-            in having to tackle problems at a different angle.
+            project holds significant value, as my friend and I persevered daily
+            to overcome the numerous challenges. Building this e-commerce
+            website has provided us with valuable experience in tackling
+            problems from diverse angles.
           </p>
           <br></br>
           <h2 className="text-lg font-bold">Discussing the project</h2>
@@ -68,11 +69,7 @@ const TailoredTails = () => {
               allowfullscreen
             ></iframe>
           </div>
-          <Link to="/">
-            <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
-              Go Back to Main Page
-            </button>
-          </Link>
+
           <div className="mt-4">
             <h3 className="font-bold">Item Slice</h3>
             <p className="mb-4">
@@ -83,13 +80,13 @@ const TailoredTails = () => {
               operation (pending, fulfilled, rejected). The fetched product
               items are stored in the Redux state.
               <br></br>
-              <br></br>I had no knowledge with Redux, Axios for handling HTTP
+              <br></br>I had no knowledge of Redux, Axios for handling HTTP
               requests, and the intricacies of setting initial states. Through
-              this project, I gained a lot of useful information and now able to
-              understand Redux's role in state management, especially in
+              this project, I gained a lot of useful information and am now able
+              to understand Redux's role in state management, especially in
               asynchronous operations using Thunks. The integration of Axios
               facilitated the incorporation of external APIs, improving my skill
-              set in dealing with real-world data fetching and error handling
+              set in dealing with real-world data fetching and error-handling
               scenarios.
             </p>
 
@@ -145,9 +142,9 @@ const TailoredTails = () => {
           <h3 className="font-bold">Authentication</h3>
           <p>
             Through creating this authentication slice, I've been able to
-            understand the key concepts in Redux and user authentication .
+            understand the key concepts in Redux and user authentication.
             Implementing the loadUser action has deepened my comprehension of
-            state initialization, utilizing JSON Web Tokens (JWTs) to persist
+            state initialisation, utilising JSON Web Tokens (JWTs) to persist
             user data, and decoding these tokens for user authentication. The
             logoutUser action has taught me state management for user logout
             scenarios, involving the removal of sensitive information and token
@@ -200,6 +197,11 @@ const TailoredTails = () => {
               });
                 `}
           </pre>
+          <Link to="/">
+            <button className="mt-4 bg-black text-white px-4 py-2 rounded-md transition duration-300 hover:bg-gray-600 hover:text-gray-100">
+              Go Back to Main Page
+            </button>
+          </Link>
         </div>
       </div>
     </div>
