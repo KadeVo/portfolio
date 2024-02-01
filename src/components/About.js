@@ -2,6 +2,7 @@ import kadinImage from '../assets/images/kadin.jpg'
 import microsoftCert from '../assets/images/AZ-900.pdf'
 import bachelorCert from '../assets/images/bachelor.pdf'
 import Socials from './Socials'
+import devacademy from '../assets/images/dev.pdf'
 
 const About = () => {
   return (
@@ -19,16 +20,21 @@ const About = () => {
           and transitioned my career after uncovering my passion for software
           development whilst I was coding as a hobby during University. I ended
           up falling in love with problem solving and the art of creating
-          software from scratch. I decided to enroll into Dev Academy where I
-          gained valuable hands-on experience in a team environment. The
-          immersive experience allowed me to cultivate my skills, not just as an
-          individual coder, but as a collaborative team player. I took on
-          challenges that mirrored real-world scenarios, honing my ability to
-          solve complex problems while working seamlessly within a team. I am
-          enthusiastic about creating innovative solutions and contributing to
-          meaningful projects. I am a passionate problem solver, a team
-          collaborator, and a fast learner who wants to make a change. I
-          recently deployed a website named{' '}
+          software from scratch. I decided to enroll Dev Academy because I heard
+          of the valuable hands-on experience that I could obtain. I graduated
+          from{' '}
+          <a href={devacademy} className="underline text-blue-500">
+            Dev Academy
+          </a>
+          , which put me through an immersive experience which allowed me to
+          cultivate my skills, not just as an individual coder, but as a
+          collaborative team player. I took on challenges that mirrored
+          real-world scenarios, honing my ability to solve complex problems
+          while working seamlessly within a team. I am enthusiastic about
+          creating innovative solutions and contributing to meaningful projects.
+          I am a passionate problem solver, a team collaborator, and a fast
+          learner who wants to make a change. I recently deployed a website
+          named{' '}
           <a
             href="https://tailoredtails.onrender.com/"
             target="_blank"
