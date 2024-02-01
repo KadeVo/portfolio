@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import CV from '../assets/images/finalCV.pdf'
-
+import devcourse from '../assets/images/devprogram.pdf'
 const Socials = () => {
   return (
     <div className="flex justify-center mt-4 space-x-4">
@@ -30,6 +30,14 @@ const Socials = () => {
         rel="noreferrer"
       >
         Resume
+      </a>
+      <a
+        href={devcourse}
+        className="inline-flex items-center px-4 py-2 border border-blue-500 rounded-md text-blue-500 hover:bg-blue-500 hover:text-white"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Dev Academy Letter
       </a>
     </div>
   )

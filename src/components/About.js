@@ -20,9 +20,7 @@ const About = () => {
           and transitioned my career after uncovering my passion for software
           development whilst I was coding as a hobby during University. I ended
           up falling in love with problem solving and the art of creating
-          software from scratch. I decided to enroll Dev Academy because I heard
-          of the valuable hands-on experience that I could obtain. I graduated
-          from{' '}
+          software from scratch. I graduated from{' '}
           <a href={devacademy} className="underline text-blue-500">
             Dev Academy
           </a>
