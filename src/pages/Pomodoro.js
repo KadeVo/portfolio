@@ -53,7 +53,7 @@ const Pomodoro = () => {
             ></iframe>
           </div>
           <br></br>
-          <h2 className="text-lg font-bold">Code In-depth Explanation</h2>
+          <h2 className="text-lg font-bold">Code Highlights</h2>
 
           <div className="mt-4">
             <h3 className="font-bold">Audio Handling</h3>

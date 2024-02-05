@@ -69,7 +69,8 @@ const TailoredTails = () => {
               allowfullscreen
             ></iframe>
           </div>
-
+          <br></br>
+          <h2 className="text-lg font-bold">Code Highlights</h2>
           <div className="mt-4">
             <h3 className="font-bold">Item Slice</h3>
             <p className="mb-4">

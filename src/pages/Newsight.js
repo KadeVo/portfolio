@@ -51,8 +51,8 @@ const Newsight = () => {
             ></iframe>
           </div>
           <br></br>
-          <h2 className="text-lg font-bold">Code In-depth Explanation</h2>
-          <br></br>
+          <h2 className="text-lg font-bold">Code Highlights</h2>
+
           <div className="mt-4">
             <p className="text-gray-600 mb-4">
               My web application utilises Next.js my custom hook
