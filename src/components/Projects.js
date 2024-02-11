@@ -117,6 +117,6 @@ const projects = [
     image: require('../assets/images/pomodoro.jpg'),
     url: '/pomodoro',
     githubUrl: 'https://github.com/KadeVo/pomodoro-app',
-    tech: ['React.js', 'React Native', 'Tailwind CSS', 'Expo'],
+    tech: ['React.js', 'React Native', 'Tailwind CSS', 'Expo', 'TypeScript'],
   },
 ]
