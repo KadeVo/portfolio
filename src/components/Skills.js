@@ -9,7 +9,6 @@ import {
   FaMobileAlt,
 } from 'react-icons/fa'
 import { SiTailwindcss } from 'react-icons/si'
-// import azureLogo from 'public/images/azure.png'
 
 const Skills = () => {
   const skillsList = [
@@ -23,11 +22,6 @@ const Skills = () => {
     { name: 'MongoDB', icon: <FaDatabase />, color: '#4db33d' },
     { name: 'Redux', icon: <span>Redux</span>, color: '#764abc' },
     { name: 'Git', icon: <FaGit />, color: '#f05032' },
-    // {
-    //   name: 'Azure Fundamentals',
-    //   icon: <img src={azureLogo} alt="Azure Logo" />,
-    //   color: '#0089d6',
-    // },
   ]
 
   return (

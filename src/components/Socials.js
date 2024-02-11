@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import CV from '../assets/images/finalCV.pdf'
-import devcourse from '../assets/images/devprogram.pdf'
+
 const Socials = () => {
   return (
     <div className="flex justify-center mt-4 space-x-4">
