@@ -31,22 +31,6 @@ const Socials = () => {
       >
         Resume
       </a>
-      <a
-        href={devcourse}
-        className="inline-flex items-center px-4 py-2 border border-blue-500 rounded-md text-blue-500 hover:bg-blue-500 hover:text-white"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Dev Academy Letter
-      </a>
-      <a
-        href="https://sites.google.com/view/kadinvo/home"
-        className="inline-flex items-center px-4 py-2 border border-blue-500 rounded-md text-blue-500 hover:bg-blue-500 hover:text-white"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Marketing Portfolio
-      </a>
     </div>
   )
 }
