@@ -23,14 +23,14 @@ const Socials = () => {
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
 
-      <a
+      {/* <a
         href={CV}
         className="inline-flex items-center px-4 py-2 border border-blue-500 rounded-md text-blue-500 hover:bg-blue-500 hover:text-white"
         target="_blank"
         rel="noreferrer"
       >
         Resume
-      </a>
+      </a> */}
     </div>
   )
 }
