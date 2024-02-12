@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav
       className={`bg-${
         isSticky ? 'black' : 'transparent'
-      } p-4 fixed top-0 w-full z-50 transition duration-300 ease-in-out`}
+      } p-4 fixed top-0 w-full transition duration-300 ease-in-out`}
     >
       <div className="justify-between items-center">
         <ul className="flex space-x-4 justify-end">
