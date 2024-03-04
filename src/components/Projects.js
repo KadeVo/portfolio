@@ -3,12 +3,17 @@ import { FaGithub } from 'react-icons/fa'
 const ProjectCard = ({ title, description, image, url, githubUrl, tech }) => (
   <div className="flex flex-col rounded-lg shadow-md p-4  w-[300px]">
     <div className="mb-4 overflow-hidden items-center">
-      <h3 className="font-bold text-lg mb-2">{title}</h3>
-      <img
-        src={image}
-        alt={title}
-        className="rounded-lg mb-4 w-full h-48 object-cover"
-      />
+      <a href={url}>
+        {' '}
+        <h3 className="font-bold text-lg mb-2">{title}</h3>
+      </a>
+      <a href={url}>
+        <img
+          src={image}
+          alt={title}
+          className="rounded-lg mb-4 w-full h-48 object-cover"
+        />
+      </a>
     </div>
     <p className="text-base mb-2">{description}</p>
     <div className="mt-4">
