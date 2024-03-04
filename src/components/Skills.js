@@ -5,8 +5,8 @@ import {
   FaReact,
   FaNodeJs,
   FaDatabase,
-  FaGit,
   FaMobileAlt,
+  FaFlask,
 } from 'react-icons/fa'
 import { SiTailwindcss } from 'react-icons/si'
 
@@ -21,7 +21,8 @@ const Skills = () => {
     { name: 'Node.js', icon: <FaNodeJs />, color: '#8cc84b' },
     { name: 'MongoDB', icon: <FaDatabase />, color: '#4db33d' },
     { name: 'Redux', icon: <span>Redux</span>, color: '#764abc' },
-    { name: 'Git', icon: <FaGit />, color: '#f05032' },
+
+    { name: 'Testing', icon: <FaFlask />, color: '#f05032' },
   ]
 
   return (
